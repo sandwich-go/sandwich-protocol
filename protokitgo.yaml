@@ -1,0 +1,39 @@
+version_protokitgo: v2.1.6
+args_protokitgo: export go
+
+dirs:
+  dir_proto: protos
+
+rawdata:
+  cs_base_namespace: "gen"
+
+paths:
+  path_working: .
+
+golang:
+  golang_relative: true
+  create_go_mod: false
+  enable_zap_log_marshal: true
+  zap_log_map_key_types: int,int32,uint32,int64,uint64,string
+  base_package_path: bitbucket.org/funplus/sandwich-protocol/gen/golang
+  version_sandwich: v1.3.0
+
+namepattern:
+  name_pattern_http_path_auto_gen: "%s"
+
+service_uri_auto_alias : true
+
+csharp:
+  gen_csharp_code: true
+
+lua:
+  gen_lua_code: true
+
+python:
+  gen_python_code: false
+
+vue:
+  gen_vue_code: false
+
+java_script:
+  gen_js_code: true

@@ -1,0 +1,9 @@
+syntax = "proto3";
+package common_command;
+option csharp_namespace = "gen.CommonCmd";
+option go_package = "bitbucket.org/funplus/sandwich/protocol/gen/golang/common_command";
+import "netutils/common.proto";
+
+service CommonCmd {
+  rpc Ping (netutils.Ping) returns (netutils.PingAck) {}
+}
